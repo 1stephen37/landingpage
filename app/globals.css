@@ -3,6 +3,40 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  font-size: 62.5%;
+  /* 10px = 1rem */
+  font-size: 10px;
+}
+
+.BorderRadius {
+  @apply rounded-[0.8rem]
+}
+
+.HeadingText {
+  @apply lg:text-[3.2rem] text-[2.4rem] font-bold leading-[125%] tracking-normal
+}
+
+.MediumSmallText {
+  @apply lg:text-[1.6rem] text-[1.4rem] text-[rgba(0,0,0,0.5)] dark:text-foreground font-medium leading-[125%] tracking-normal
+}
+
+.NormalText {
+  @apply lg:text-[1.8rem] text-[1.6rem] font-normal leading-[125%] tracking-normal
+}
+
+.MediumText {
+  @apply lg:text-[1.8rem] text-[1.6rem] font-medium leading-[125%] tracking-normal
+}
+
+.BoldText {
+  @apply lg:text-[1.8rem] text-[1.6rem] font-bold leading-[125%] tracking-normal
+}
+
+.subHeadingText {
+  @apply lg:text-[2.4rem] text-[2rem] font-semibold leading-[125%] tracking-normal
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

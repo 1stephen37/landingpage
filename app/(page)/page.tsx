@@ -1,7 +1,9 @@
+import BannerHero from "@/components/sections/BannerHero";
+
 export default function Home() {
     return (
         <div className={''}>
-            <div className="banner bg-secondary h-20"></div>
+            <BannerHero/>
             <div className="h-[500rem]">
 
             </div>

@@ -22,7 +22,7 @@ export default function ModeToggle() {
     return (
         <div className='flex justify-end w-max items-center gap-[.5rem]'>
             <div onClick={toggleTheme}
-                 className={`hidden sm:block text-[1.8rem] cursor-pointer text-secondary dark:text-primary my-[0.65rem]`}
+                 className={`hidden sm:block text-[1.8rem] cursor-pointer text-secondary dark:text-secondary my-[0.65rem]`}
             >
                 Giao diện : {theme === "light" ? "Sáng" : "Tối"}
             </div>
@@ -32,7 +32,7 @@ export default function ModeToggle() {
             </div>
             <div className="w-max h-auto cursor-pointer select-none hidden dark:text-primary dark:block"
                  onClick={toggleTheme}>
-                <CiDark className={`text-foreground font-medium w-[2.8rem] h-[2.8rem]`}
+                <CiDark className={`text-secondary font-medium w-[2.8rem] h-[2.8rem]`}
                         stroke="currentColor" strokeWidth={1}/>
             </div>
         </div>

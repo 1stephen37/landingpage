@@ -8,7 +8,7 @@ export default function Container({
     className?: string;
 }>) {
     return (
-        <main className={`w-[90%] mx-auto ${className || ''}`}>
+        <main className={`w-[90%] md:w-[75%] mx-auto ${className || ''}`}>
             {children}
         </main>
     );

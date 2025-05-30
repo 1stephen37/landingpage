@@ -1,6 +1,7 @@
 import Header from '@/components/layouts/Header';
 import React from 'react';
 import Container from "@/components/layouts/Container";
+import Footer from "@/components/layouts/Footer";
 
 export default function Layout({
                     children,
@@ -13,6 +14,7 @@ export default function Layout({
             <Container>
                 {children}
             </Container>
+            <Footer/>
         </div>
     );
 }

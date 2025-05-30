@@ -35,7 +35,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-            <div className="relative">
+            <div className="relative min-h-screen">
                 {children}
             </div>
         </ThemeProvider>
